@@ -28,6 +28,14 @@ const UserSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    otp: {
+      type: String,
+      required: false,
+    },
+    otpExpire: {
+      type: Date,
+      required: false,
+    },
   },
   {
     timestamps: true,

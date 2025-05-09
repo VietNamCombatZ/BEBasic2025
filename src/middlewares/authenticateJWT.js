@@ -18,7 +18,7 @@ export const authenticateJWT = (req, res, next) => {
     }
     console.log("Decoded Token: ", decoded);
 
-    req.user = decoded;
+    req.decoded = decoded;
     next();
 
 
